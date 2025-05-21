@@ -1,4 +1,4 @@
-package com.exemplo.demo.config;
+package com.exemplo.demo.config; // esse package precisa bater com o local da pasta
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -18,7 +18,7 @@ public class SecurityConfig {
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         http
                 .csrf(csrf -> csrf.disable())
-                .cors(Customizer.withDefaults()) // substitui o .cors().and()
+                .cors(Customizer.withDefaults()) // habilita o CORS
                 .authorizeHttpRequests(auth -> auth
                         .anyRequest().permitAll()
                 );
