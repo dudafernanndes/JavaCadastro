@@ -1,0 +1,6 @@
+com\exemplo\demo\dto\LoginRequest.class
+com\exemplo\demo\service\UserService.class
+com\exemplo\demo\DemoApplication.class
+com\exemplo\demo\model\User.class
+com\exemplo\demo\repository\UserRepository.class
+com\exemplo\demo\controller\HealthCheckController.class
